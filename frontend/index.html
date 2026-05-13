@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office Asset Intelligence</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Office Asset Intelligence</h1>
+      <input id="searchInput" placeholder="Search assets..." />
+      <select id="categoryFilter">
+        <option value="">All categories</option>
+        <option>Laptop</option>
+        <option>Monitor</option>
+        <option>Furniture</option>
+      </select>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Asset Analytics</h2>
+        <p id="totalAssets">Total assets: 0</p>
+        <p id="totalCost">Total cost: $0</p>
+      </section>
+
+      <section class="card">
+        <h2>Department Usage</h2>
+        <ul id="departmentUsage"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Maintenance History</h2>
+        <p id="maintenanceCount">Maintenance events: 0</p>
+      </section>
+
+      <section class="card full-width">
+        <h2>Assets</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Status</th>
+              <th>Office</th>
+              <th>Cost</th>
+            </tr>
+          </thead>
+          <tbody id="assetRows"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
